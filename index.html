@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gravity Sim</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <script>
+    function startSimulation() {
+      start();
+      var backgroundMusic = new Audio("SOUND/soundscape.mp3");
+      backgroundMusic.loop = true;
+      backgroundMusic.play();
+      document.getElementById('startButton').style.display = 'none';
+    }
+  </script>
+  <body>
+    <button onclick="startSimulation()" id="startButton">GO TO SIMULATION</button>
+
+  </body>
+</html>
